@@ -1,3 +1,10 @@
+## Table of document contents
+
+[TOCM]
+
+[TOC]
+
+
 ## JSDump
 
 JSDump is a tool to dump out the information of own and inherited properties from an object, object prototype, and object instance.
@@ -56,7 +63,7 @@ Entry is an object that describes a property of the object which was processed b
 Entries object is null if the obj is a primitive type: string, number, bigint, boolean, symbol, undefined, or null.
 
 
-## Dump a general object
+## Dumps a general object
 
 The general object is a JavaScript standard built-in object, a Node.js module object, or a customed object, the properties of entries object from a general object are:
 
@@ -73,9 +80,9 @@ For example, the entries object got from jsdump.entriesPrint( {} ):
 }
 ```
 
-## Dump a function
+## Dumps a function
 
-A function is a JavaScript object, supposing jsFunct is the function which should be processed, key is a property name to jsFunct, and baseFunct is another function object, the propertis of entries object from jsFunct would be:
+A function is a JavaScript object, supposing jsFunct is the function which should be processed, key is a property name to jsFunct, and baseFunct is another function object, the propertis of entries object from jsFunct and baseFunct would be:
 
 *  ownEntries
     An array of entries that stored the information from jsFunct.key or Object.defineProperty(jsFunct, key, descriptor).
@@ -128,7 +135,7 @@ There is no prototype and instance to an arrow function, so the entries object f
 }
 ```
 
-## Dump a class  
+## Dumps a class  
 
 A class is a function object, the features of a class include all methods in a class are public, a property in a class is either public or private, a class property and a class method could be static.
 

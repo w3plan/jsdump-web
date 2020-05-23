@@ -21,12 +21,11 @@ To see [JSDump-Web documentation](doc/document.md "JSDump-Web documentation")
 
 Download jsdump.js and jsdump.src.js from [JSDump-Web repository](https://github.com/w3plan/jsdump-web "JSDump-Web repository") to the directory of your web server, for example, web-root-dir/js/jsdump-dir/ or web-root-dir/jsdump-dir/
 
-Instead of download jsdump.js, you can include it via CDN with https://cdn.jsdelivr.net/gh/w3plan/jsdump-web&#64;master/jsdump.js
+Instead of download jsdump.js, you can include it via CDN with https://cdn.jsdelivr.net/gh/w3plan/jsdump-web@master/jsdump.js
 
 ## Usage
 
-Adding &lt;script src="https://cdn.jsdelivr.net/gh/w3plan/jsdump-web&#64;master/jsdump.js"&gt;&lt;/script> or &lt;script src="/js/jsdump-dir/jsdump.js"&gt;&lt;/script&gt; to web pages then doing:
-<br>
+Adding &lt;script src="https://cdn.jsdelivr.net/gh/w3plan/jsdump-web@master/jsdump.js"&gt;&lt;/script&gt; or &lt;script src="/js/jsdump-dir/jsdump.js"&gt;&lt;/script&gt; to web pages then doing:
 
 ```javascript
   // prints this message.

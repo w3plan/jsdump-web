@@ -28,7 +28,7 @@ Supposing obj is an object which should be processed, JSDump parses an JavaScrip
 *  prototypeIheritedEntries array includes entries from Object.getPrototypeOf(obj.prototype) if it exists,
 *  instanceOwnEntries array includes entries from new obj if new obj exists.
 
-The value of prototypeOwnEntries is a description string if obj.prototype is a JavaScript standard built-in object or a browser built-in object, and the value of prototypeIheritedEntries is a description string if Object.getPrototypeOf(obj.prototype) a JavaScript standard built-in object or a browser built-in object.
+The value of prototypeOwnEntries is a description string if obj.prototype is a JavaScript standard built-in object or a browser built-in object, and the value of prototypeIheritedEntries is a description string if Object.getPrototypeOf(obj.prototype) is a JavaScript standard built-in object or a browser built-in object.
 
 Object.getPrototypeOf returns a internal [[Prototype]] property of obj.
 

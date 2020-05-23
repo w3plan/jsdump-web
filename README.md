@@ -6,8 +6,8 @@ JSDump-Web helps people get the information of a JavaScript object at runtime as
 
 JSDump-Web requires browser supporting for ES6 (ECMAScript 2015). 
 |Chrome |Firefox |Edge |Safari |Opera |
-| ---------|--------|-------|-------|-------|
-|  51      |54      |14     | 10    | 38    |
+|---------|--------|-------|-------|-------|
+| 51      |54      |14     | 10    | 38    |
 
 JSDump-Web is a version of JSDump specified for web browsers. To access [JSDump repository](https://github.com/w3plan/jsdump "JSDump") for the details.
 
@@ -21,11 +21,13 @@ To see [JSDump-Web documentation](doc/document.md "JSDump-Web documentation")
 
 Download jsdump.js and jsdump.src.js from [JSDump-Web repository](https://github.com/w3plan/jsdump-web "JSDump-Web repository") to the directory of your web server, for example, web-root-dir/js/jsdump-dir/ or web-root-dir/jsdump-dir/
 
+Instead of download jsdump.js, you can include it via CDN with https://cdn.jsdelivr.net/gh/w3plan/jsdump-web&#64;master/jsdump.js
 
 ## Usage
 
-Adding  &lt;script src="/js/jsdump-dir/jsdump.js"&gt;&lt;/script&gt; to web pages then doing:
-  
+Adding &lt;script src="https://cdn.jsdelivr.net/gh/w3plan/jsdump-web&#64;master/jsdump.js"&gt;&lt;/script> or &lt;script src="/js/jsdump-dir/jsdump.js"&gt;&lt;/script&gt; to web pages then doing:
+<br>
+
 ```javascript
   // prints this message.
   jsdump.info();

@@ -338,7 +338,7 @@ JSDump API allows users to assign new hidden Keys to filter the output content.
 |AnonymousFunction |function |
 |Function |function |
 |AnonymousClass |class |
-|class |class |
+|Class |class |
 |EmptyArray |indexedCollection |
 |Array |indexedCollection |
 |Int8Array |indexedCollection |
@@ -382,7 +382,7 @@ JSDump API allows users to assign new hidden Keys to filter the output content.
 |External * |others |
 |Others |others |
 
-For browser compatibility, JSDump-Web considers property types with * in the list as others.
+For browser compatibility, JSDump-Web considers property types with * in the list as Others.
 
 
 ## JavaScript built-in prototype objects

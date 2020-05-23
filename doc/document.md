@@ -2,21 +2,20 @@
 
 * [JSDump](#JSDump)
 * [JSDump-Web](#JSDump-Web)
-* [Entries object](#Entries object)
-* [Dumps a general object](#Dumps a general object)
-* [Dumps a function](#Dumps a function)
-* [Dumps a class](#Dumps a class)
-* [JSDump APIs](#JSDump APIs)
-* [JSDump-Web APIs](#JSDump-Web APIs)
-* [Property attributes](#Property attributes)
+* [Entries object](#Entries%20object)
+* [Dumps a general object](#Dumps%20a%20general%20object)
+* [Dumps a function](#Dumps%20a%20function)
+* [Dumps a class](#Dumps%20a%20class)
+* [JSDump APIs](#JSDump%20APIs)
+* [JSDump-Web APIs](#JSDump-Web%20APIs)
+* [Property attributes](#Property%20attributes)
 * [Serialization](#Serialization)
-* [Default hidden Keys](#Default hidden Keys)
-* [Property types and super property types](#Property types and super property types)
-* [JavaScript built-in prototype objects](#JavaScript built-in prototype objects)
-* [Web built-in prototype objects](#Web built-in prototype objects)
-* [Function parameter](#Function parameter)
+* [Default hidden Keys](#Default%20hidden%20Keys)
+* [Property types and super property types](#Property%20types%20and%20super%20property%20types)
+* [JavaScript built-in prototype objects](#JavaScript%20built-in%20prototype%20objects)
+* [Web built-in prototype objects](#Web%20built-in%20prototype%20objects)
+* [Function parameter](#Function%20parameter)
 
------------------------
 
 
 ## JSDump

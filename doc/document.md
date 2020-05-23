@@ -1,8 +1,22 @@
 ## Table of document contents
 
-[TOCM]
+* [JSDump](#JSDump)
+* [JSDump-Web](#JSDump-Web)
+* [Entries object](#Entries object)
+* [Dumps a general object](#Dumps a general object)
+* [Dumps a function](#Dumps a function)
+* [Dumps a class](#Dumps a class)
+* [JSDump APIs](#JSDump APIs)
+* [JSDump-Web APIs](#JSDump-Web APIs)
+* [Property attributes](#Property attributes)
+* [Serialization](#Serialization)
+* [Default hidden Keys](#Default hidden Keys)
+* [Property types and super property types](#Property types and super property types)
+* [JavaScript built-in prototype objects](#JavaScript built-in prototype objects)
+* [Web built-in prototype objects](#Web built-in prototype objects)
+* [Function parameter](#Function parameter)
 
-[TOC]
+-----------------------
 
 
 ## JSDump

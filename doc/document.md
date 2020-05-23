@@ -14,8 +14,10 @@ JSDump-Web is a version of JSDump for web browsers. JSDump-Web requires browser 
 Browser compatibilities to JSDump-Web,
 
 |Chrome |Firefox |Edge |Safari |Opera |
-| ---------|--------|-------|-------|-------|
-|  51      |54      |14     | 10    | 38    |
+|---------|--------|-------|-------|-------|
+| 51      |54      |14     | 10    | 38    |
+
+The URL of JSDump-Web CDN is https://cdn.jsdelivr.net/gh/w3plan/jsdump-web/
 
 
 ## Entries object

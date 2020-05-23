@@ -25,7 +25,7 @@ Instead of download jsdump.js, you can include it via CDN with https://cdn.jsdel
 
 ## Usage
 
-Adding &lt;script src="https://cdn.jsdelivr.net/gh/w3plan/jsdump-web@master/jsdump.js"&gt;&lt;/script&gt; or &lt;script src="/js/jsdump-dir/jsdump.js"&gt;&lt;/script&gt; to web pages then doing:
+Adding &lt;script src="https://cdn.jsdelivr.net/gh/w3plan/jsdump-web@master/jsdump.js"></script&gt; or &lt;script src="/js/jsdump-dir/jsdump.js"&gt;&lt;/script&gt; to web pages then doing:
 
 ```javascript
   // prints this message.
@@ -58,6 +58,8 @@ Adding &lt;script src="https://cdn.jsdelivr.net/gh/w3plan/jsdump-web@master/jsdu
   jsdump.sourcePage(jsdump, 'sourcePrint');
 
 ```
+The APIs that write the information to a new page requires the browser to open a pop-up window, you may need to enable pop-up window in the browser setting for these APIs. 
+
 
 ## Tests
 

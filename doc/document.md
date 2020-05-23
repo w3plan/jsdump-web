@@ -1,21 +1,20 @@
 ## Table of document contents
 
-* [JSDump](#JSDump)
-* [JSDump-Web](#JSDump-Web)
-* [Entries object](#Entries%20object)
-* [Dumps a general object](#Dumps%20a%20general%20object)
-* [Dumps a function](#Dumps%20a%20function)
-* [Dumps a class](#Dumps%20a%20class)
-* [JSDump APIs](#JSDump-APIs)
-* [JSDump-Web APIs](#JSDump-Web-APIs)
-* [Property attributes](#Property%20attributes)
-* [Serialization](#Serialization)
-* [Default hidden Keys](#Default%20hidden%20Keys)
-* [Property types and super property types](#Property%20types%20and%20super%20property%20types)
-* [JavaScript built-in prototype objects](#JavaScript%20built-in%20prototype%20objects)
-* [Web built-in prototype objects](#Web%20built-in%20prototype%20objects)
-* [Function parameter](#Function%20parameter)
-
+1. [JSDump](#JSDump)
+2. [JSDump-Web](#JSDump-Web)
+3. [Entries object](#Entries-object)
+4. [Dumps a general object](#Dumps-a-general-object)
+5. [Dumps a function](#Dumps-a-function)
+6. [Dumps a class](#Dumps-a-class)
+7. [JSDump APIs](#JSDump-APIs)
+8. [JSDump-Web APIs](#JSDump-Web-APIs)
+9. [Property attributes](#Property-attributes)
+10. [Serialization](#Serialization)
+11. [Default hidden Keys](#Default-hidden-Keys)
+12. [Property types and super property types](#Property-types-and-super-property-types)
+13. [JavaScript built-in prototype objects](#JavaScript-built-in-prototype-objects)
+14. [Web built-in prototype objects](#Web-built-in-prototype-objects)
+15. [Function parameter](#Function-parameter)
 
 
 ## JSDump

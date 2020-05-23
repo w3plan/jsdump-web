@@ -14,8 +14,8 @@ JSDump-Web is a version of JSDump for web browsers. JSDump-Web requires browser 
 Browser compatibilities to JSDump-Web,
 
 |Chrome |Firefox |Edge |Safari |Opera |
-|---------|--------|-------|-------|-------|
-| 51      |54      |14     | 10    | 38    |
+| ---------|--------|-------|-------|-------|
+|  51      |54      |14     | 10    | 38    |
 
 The URL of JSDump-Web CDN is https://cdn.jsdelivr.net/gh/w3plan/jsdump-web/
 
@@ -187,8 +187,8 @@ For example, the entries object got from jsdump.entriesPrint( class {} ):
 Returns an object that includes dumped out content from the given object.
 
 Parameters
-> obj  -- An object which should be processed.
-> hiddenKeys -- An array of the given properties that should be ignored in the result, the default  value is true.
+> obj  -- An object which should be processed.<br>
+> hiddenKeys -- An array of the given properties that should be ignored in the result, the default  value is true.<br>
 > Return value -- An object of dumped out content.
 
 
@@ -196,8 +196,8 @@ Parameters
   Prints the entries information of an object to the console.
 
 Parameters
-> obj  --  An object which should be processed.
-> compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.
+> obj  --  An object which should be processed.<br>
+> compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.<br>
 > hiddenKeys --  An optional array of keys that would be ignored in dumped out content, the default value is [].
 
 
@@ -205,9 +205,9 @@ Parameters
   Writes entries object to a txt file.
 
  Parameters
- >obj -- An object which should be processed.
- > compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.
- > hiddenKeys -- An optional array of keys that would be ignored in dumped out content, the default value is [].
+ > obj -- An object which should be processed.<br>
+ > compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.<br>
+ > hiddenKeys -- An optional array of keys that would be ignored in dumped out content, the default value is [].<br>
  > file -- A file path to dumped-out content, if the file path was ignored the function would write dump-n.txt to the current directory, here n is an integer between 1000 and 9999.
 
 
@@ -215,9 +215,9 @@ Parameters
   Prints entries in assigned type to the console.
 
   Parameters
-  > obj -- An object which should be processed.
-  > proptype -- One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection' and 'others', the default value is 'function'.
-  > compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.
+  > obj -- An object which should be processed.<br>
+  > proptype -- One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection' and 'others', the default value is 'function'.<br>
+  > compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.<br>
   > hiddenKeys  -- An optional array of keys that would be ignored in dumped out content, the default value is [].
 
 
@@ -225,10 +225,10 @@ Parameters
   Writes entries in assigned type to a txt file.
 
   Parameters
-  >  obj --  An object which should be processed.
-  > propType -- One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection' and 'others', the default value is 'function'.
-  > compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.
-  > hiddenKeys --  An optional array of keys that would be ignored in dumped out content, the default value is [].
+  >  obj --  An object which should be processed.<br>
+  > propType -- One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection' and 'others', the default value is 'function'.<br>
+  > compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.<br>
+  > hiddenKeys --  An optional array of keys that would be ignored in dumped out content, the default value is [].<br>
   > file -- A file path to dumped-out content, if the file path was ignored the function would write dump-n.txt to current directory, here n is an integer between 1000 and 9999.
 
 
@@ -236,7 +236,7 @@ Parameters
   Prints the property source to the console.
 
   Parameters
-  > obj -- An object which should be processed.
+  > obj -- An object which should be processed.<br>
   > prop -- An optional string for the property, the default value is 'constructor'.
 
 
@@ -244,8 +244,8 @@ Parameters
   Writes the property source to a txt file.
 
   Parameters
-  > obj -- An object which should be processed.
-  > prop -- An optional string for the property, the default value is 'constructor'.
+  > obj -- An object which should be processed.<br>
+  > prop -- An optional string for the property, the default value is 'constructor'.<br>
   > file -- A file path to dumped-out content, if the file path was ignored the function would write dump-n.txt to current directory, here n is an integer between 1000 and 9999.
 
 
@@ -264,11 +264,11 @@ Parameters
 
 
 **entriesPage(obj, raw = false, hiddenKeys = [])**
-  Prints the entries information of an object to a new page. This API required browser allows to open a pop-up window in the setting.
+  Prints the entries information of an object to a new page. This API requires the browser to open a pop-up window.
 
   Parameters
-  > obj -- An object which should be processed.
-  > raw -- An optional boolean for dumped-out content format, the default value is false to output content with style.
+  > obj -- An object which should be processed.<br>
+  > raw -- An optional boolean for dumped-out content format, the default value is false to output content with style.<br>
   > hiddenKeys -- An optional array of keys that would be ignored in dumped out content, the default value is [].
 
 
@@ -277,12 +277,12 @@ Parameters
 
 
 **typeEntriesPage(obj, propType = 'function', raw = false, hiddenKeys = [])**
-  Prints the entries information of an object by assigned property type to a new page. This API required browser allows to open a pop-up window in the setting.
+  Prints the entries information of an object by assigned property type to a new page. This API requires the browser to open a pop-up window.
 
   Parameters
-  > obj -- An object which should be processed.
-  > propType -- One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection', 'others', the default value is 'function'.
-  > raw -- An optional boolean for the format of dumped out content, the default value is false to output content with style.
+  > obj -- An object which should be processed.<br>
+  > propType -- One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection', 'others', the default value is 'function'.<br>
+  > raw -- An optional boolean for the format of dumped out content, the default value is false to output content with style.<br>
   > hiddenKeys -- An optional array of keys that would be ignored in dumped out content, the default value is [].
 
 
@@ -291,11 +291,11 @@ Parameters
 
 
 **sourcePage(obj, prop = 'constructor', raw = false)**
-  Prints the property source to a new page. This API required browser allows to open a pop-up window in the setting.
+  Prints the property source to a new page. This API requires the browser to open a pop-up window.
 
   Parameters
-  > obj -- An object which should be processed.
-  > prop -- An optional string for the property, the default value is constructor.
+  > obj -- An object which should be processed.<br>
+  > prop -- An optional string for the property, the default value is constructor.<br>
   > raw -- An optional boolean for the format of dumped out content.
 
 

@@ -179,11 +179,11 @@ For example, the entries object got from jsdump.entriesPrint( class {} ):
 
 ## JSDump APIs
 
-**info()**
+**info()**<br>
   Prints the brief information about JSDump to the console.
 
 
-**entriesObj(obj, hiddenKeys = [])**
+**entriesObj(obj, hiddenKeys = [])**<br>
 Returns an object that includes dumped out content from the given object.
 
 Parameters
@@ -192,7 +192,7 @@ Parameters
 > Return value -- An object of dumped out content.
 
 
-**entriesPrint(obj, compact = true, hiddenKeys = [])**
+**entriesPrint(obj, compact = true, hiddenKeys = [])**<br>
   Prints the entries information of an object to the console.
 
 Parameters
@@ -201,7 +201,7 @@ Parameters
 > hiddenKeys --  An optional array of keys that would be ignored in dumped out content, the default value is [].
 
 
-**entriesFile(obj, compact = true, hiddenKeys = [], file)**
+**entriesFile(obj, compact = true, hiddenKeys = [], file)**<br>
   Writes entries object to a txt file.
 
  Parameters
@@ -211,7 +211,7 @@ Parameters
  > file -- A file path to dumped-out content, if the file path was ignored the function would write dump-n.txt to the current directory, here n is an integer between 1000 and 9999.
 
 
-**typeEntriesPrint(obj, propType = 'function', compact = true, hiddenKeys = [])**
+**typeEntriesPrint(obj, propType = 'function', compact = true, hiddenKeys = [])**<br>
   Prints entries in assigned type to the console.
 
   Parameters
@@ -221,18 +221,18 @@ Parameters
   > hiddenKeys  -- An optional array of keys that would be ignored in dumped out content, the default value is [].
 
 
-**typeEntriesFile(obj, propType = 'function', compact = true, hiddenKeys = [], file)**
+**typeEntriesFile(obj, propType = 'function', compact = true, hiddenKeys = [], file)**<br>
   Writes entries in assigned type to a txt file.
 
   Parameters
-  >  obj --  An object which should be processed.<br>
+  > obj --  An object which should be processed.<br>
   > propType -- One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection' and 'others', the default value is 'function'.<br>
   > compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.<br>
   > hiddenKeys --  An optional array of keys that would be ignored in dumped out content, the default value is [].<br>
   > file -- A file path to dumped-out content, if the file path was ignored the function would write dump-n.txt to current directory, here n is an integer between 1000 and 9999.
 
 
-**sourcePrint(obj, prop = 'constructor')**
+**sourcePrint(obj, prop = 'constructor')**<br>
   Prints the property source to the console.
 
   Parameters
@@ -240,7 +240,7 @@ Parameters
   > prop -- An optional string for the property, the default value is 'constructor'.
 
 
-**sourceFile(obj, prop = 'constructor', file)**
+**sourceFile(obj, prop = 'constructor', file)**<br>
   Writes the property source to a txt file.
 
   Parameters
@@ -251,19 +251,19 @@ Parameters
 
 ## JSDump-Web APIs
 
-**info()**
+**info()**<br>
   The same with the function in JSDump APIs.
 
 
-**entriesObj(obj, hiddenKeys = [])**
+**entriesObj(obj, hiddenKeys = [])**<br>
   The same with the function in JSDump APIs.
 
 
-**entriesPrint(obj, hiddenKeys = [])**
+**entriesPrint(obj, hiddenKeys = [])**<br>
   Except for no compact parameter, it is the same with the function in JSDump APIs.
 
 
-**entriesPage(obj, raw = false, hiddenKeys = [])**
+**entriesPage(obj, raw = false, hiddenKeys = [])**<br>
   Prints the entries information of an object to a new page. This API requires the browser to open a pop-up window.
 
   Parameters
@@ -272,11 +272,11 @@ Parameters
   > hiddenKeys -- An optional array of keys that would be ignored in dumped out content, the default value is [].
 
 
-**typeEntriesPrint(obj, propType = 'function', hiddenKeys = [])**
+**typeEntriesPrint(obj, propType = 'function', hiddenKeys = [])**<br>
   Except for no compact parameter, it is the same with the function in JSDump APIs.
 
 
-**typeEntriesPage(obj, propType = 'function', raw = false, hiddenKeys = [])**
+**typeEntriesPage(obj, propType = 'function', raw = false, hiddenKeys = [])**<br>
   Prints the entries information of an object by assigned property type to a new page. This API requires the browser to open a pop-up window.
 
   Parameters
@@ -286,11 +286,11 @@ Parameters
   > hiddenKeys -- An optional array of keys that would be ignored in dumped out content, the default value is [].
 
 
-**sourcePrint(obj, prop = 'constructor')**
+**sourcePrint(obj, prop = 'constructor')**<br>
   The same with the function in JSDump APIs.
 
 
-**sourcePage(obj, prop = 'constructor', raw = false)**
+**sourcePage(obj, prop = 'constructor', raw = false)**<br>
   Prints the property source to a new page. This API requires the browser to open a pop-up window.
 
   Parameters

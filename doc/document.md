@@ -81,9 +81,9 @@ Entries object is null if the obj is a primitive type: string, number, bigint, b
 
 The general object is a JavaScript standard built-in object, a Node.js module object, or a customed object, the properties of entries object from a general object are:
 
-*  ownEntries
+*  ownEntries<br>
     An array of entries that stored the information extracted from properties in the general object.
-*  inheritedEntries
+*  inheritedEntries<br>
     A description string of a JavaScript standard built-in object or a browser built-in object.
 
 For example, the entries object got from jsdump.entriesPrint( {} ):

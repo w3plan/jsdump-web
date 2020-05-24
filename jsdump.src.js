@@ -1339,7 +1339,7 @@ var jsdump = function(version) {
    */
   this.info = function() {
     console.log(`
-       ***  JSDump-Web v1.0.2 ***
+       ***  JSDump-Web ***
     JSDump-Web is a tool to dump out the information of own and inherited properties from an object, 
     object prototype, and object instance.
     
@@ -1440,8 +1440,9 @@ var jsdump = function(version) {
    * 
    * @param {object} obj - An JavaScript object to dump out
    * @param {array} [hiddenKeys = []] - An optional array of keys that would be ignored in dumped out content
+   * @param {boolean} color - true to print color text, false to print text without color
    */
-  this.entriesPrint = function (obj, hiddenKeys = []) {
+  this.entriesPrint = function (obj, hiddenKeys = [], color = false) {
     var props = null, flag = false, source = '';    
     var entries = this.entriesObj(obj, hiddenKeys);
 
@@ -1456,9 +1457,15 @@ var jsdump = function(version) {
           if ( Array.isArray(props) && props.length > 0 ) {
             props = doSerialization(props);
           }
+          
+          if (color) {
+            console.log('\n%c' + key, 'font-weight:bold');
+            console.log( inspect(props, false, 10, true, true, true) );
+          } else {
+            console.log('\n' + key);
+            console.log( inspect(props, false, 10, false, true, true) );
+          }
 
-          console.log('\n%c' + key, 'font-weight:bold');
-          console.log( inspect(props, false, 10, true, true, true) );
           flag = true;
         }
       });
@@ -1476,8 +1483,9 @@ var jsdump = function(version) {
    * @param {object} obj  - A JavaScript object to dump out
    * @param {string} [propType=function] - One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection', 'others'
    * @param {array} [hiddenKeys = []] - An optional array of keys that would be ignored in dumped out content
+   * @param {boolean} color - true to print color text, false to print text without color
    */
-  this.typeEntriesPrint = function (obj, propType = 'function', hiddenKeys = []) {
+  this.typeEntriesPrint = function (obj, propType = 'function', hiddenKeys = [], color = false) {
     var props = null,
         typeEntries = [],
         entries = this.entriesObj(obj, hiddenKeys);
@@ -1493,7 +1501,12 @@ var jsdump = function(version) {
       console.log('There is no entries to print.');
     } else {
       typeEntries = doSerialization( typeEntries );
-      console.log( inspect(typeEntries, false, 10, true, true, true) );
+
+      if (color) {
+        console.log( inspect(typeEntries, false, 10, true, true, true) );
+      } else {
+        console.log( inspect(typeEntries, false, 10, false, true, true) );
+      }
     }
   };
   
@@ -1592,6 +1605,6 @@ var jsdump = function(version) {
  * Create global object: jsdump
  * @public
  */
-window.jsdump = new jsdump("Version 1.0.2");
+window.jsdump = new jsdump("Version 1.0.3");
 
 })();

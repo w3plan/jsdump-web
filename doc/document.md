@@ -25,10 +25,12 @@ JSDump helps people get the information of a JavaScript object at runtime as muc
 
 JSDump requires Node.js version 10.0.0 and up.
 
+The URL of JSDump on npm is https://npmjs.com/package/jsdump
+
 
 ## JSDump-Web
 
-JSDump-Web is a version of JSDump for web browsers. JSDump-Web requires browser supporting for ES6 (ECMAScript 2015)
+JSDump-Web is a version of JSDump for web browsers. JSDump-Web requires browser supporting for ES6 (ECMAScript 2015).
 
 Browser compatibilities to JSDump-Web,
 
@@ -57,19 +59,19 @@ If new obj and obj.prototype are not undefined, Object.getPrototypeOf(new obj) =
 
 Entry is an object that describes a property of the object which was processed by JSDump, entry properties and its meaning include:
 
-*  key
+*  key<br>
     The property(including methods to class) name from the input object
-*  attributes
+*  attributes<br>
     An array that the element could be 'configurable', 'enumerable', 'writable', 'getter', 'setter', 'extensible', 'sealed', or 'frozen'. The element can not be 'extensible', 'sealed', or 'frozen' if the input object is a primitive type.
-*  types
+*  types<br>
     An array that the element is the result of type checking functions.
-*  constructor
+*  constructor<br>
     Constructor name of the current property.
-*  value
+*  value<br>
     The value of the current property. JSDump automatically convert the value to a serialized string to output for the console, external file, and web pages if the value isn't a primitive type, a boxed primitive type, or the native code.
-*  valueSerialized
+*  valueSerialized<br>
     true if the value is a serialized string, otherwise false.
-*  valuePrototypeConstructor
+*  valuePrototypeConstructor<br>
     Constructor name of the value prototype if the prototype object exists.
 
 Entries object is null if the obj is a primitive type: string, number, bigint, boolean, symbol, undefined, or null.
@@ -96,15 +98,15 @@ For example, the entries object got from jsdump.entriesPrint( {} ):
 
 A function is a JavaScript object, supposing jsFunct is the function which should be processed, key is a property name to jsFunct, and baseFunct is another function object, the propertis of entries object from jsFunct and baseFunct would be:
 
-*  ownEntries
+*  ownEntries<br>
     An array of entries that stored the information from jsFunct.key or Object.defineProperty(jsFunct, key, descriptor).
-*  inheritedEntries
+*  inheritedEntries<br>
     To be 'JavaScript standard built-in object: Function'.
-*  prototypeOwnEntries
+*  prototypeOwnEntries<br>
     An array of entries that stored the information from jsFunct.prototype.key
-*  prototypeIheritedEntries
+*  prototypeIheritedEntries<br>
     To be 'JavaScript standard built-in object: Object'.
-*  instanceOwnEntries
+*  instanceOwnEntries<br>
     An array of entries that stored the information from properties with this. prefix in jsFunct, and properties with this. prefix in baseFunct if jsFunct includes the statement: baseFunct.apply(this[, arguments]) or baseFunct.call(this[, arg1, arg2, ...argN]) in the source.
 
 For example, the entries object got from jsdump.entriesPrint( function() {} ):
@@ -153,15 +155,15 @@ A class is a function object, the features of a class include all methods in a c
 
 Supposing currentClass is a superclass or a derived class, baseClass is a subclass or a super class, key is a property name or a method name to currentClass and baseClass, the properties of entries object from currentClass and baseClass would be:
 
-*  ownEntries
+*  ownEntries<br>
     An array of entries that stored the information from static properties and static methods in currentClass, and all properties and methods defined by currentClass.key or Object.defineProperty(currentClass, key, descriptor).
-*  inheritedEntries
+*  inheritedEntries<br>
     An array of entries that stored the information from static properties and static methods in baseClass, or 'JavaScript standard built-in object: Function' if there is no baseClass.
-*  prototypeOwnEntries
+*  prototypeOwnEntries<br>
     An array of entries that stored the information from public methods(include getter and setter) in currentClass, and all properties defined by currentClass.prototype.key
-*  prototypeIheritedEntries
+*  prototypeIheritedEntries<br>
     An array of entries that stored the information from public methods in baseClass, or 'JavaScript standard built-in object: Object' if there is no baseClass.
-*  instanceOwnEntries
+*  instanceOwnEntries<br>
     An array of entries that stored the information from public properties(no methods) from currentClass and baseClass.
 
 For example, the entries object got from jsdump.entriesPrint( class {} ):
@@ -203,21 +205,21 @@ For example, the entries object got from jsdump.entriesPrint( class {} ):
 
 
 **entriesObj(obj, hiddenKeys = [])**<br>
-Returns an object that includes dumped out content from the given object.
+  Returns an object that includes dumped out content from the given object.
 
-Parameters
-> obj  -- An object which should be processed.<br>
-> hiddenKeys -- An array of the given properties that should be ignored in the result, the default  value is true.<br>
-> Return value -- An object of dumped out content.
+  Parameters
+  > obj  -- An object which should be processed.<br>
+  > hiddenKeys -- An array of the given properties that should be ignored in the result, the default  value is true.<br>
+  > Return value -- An object of dumped out content.
 
 
 **entriesPrint(obj, compact = true, hiddenKeys = [])**<br>
   Prints the entries information of an object to the console.
 
-Parameters
-> obj  --  An object which should be processed.<br>
-> compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.<br>
-> hiddenKeys --  An optional array of keys that would be ignored in dumped out content, the default value is [].
+  Parameters
+  > obj  --  An object which should be processed.<br>
+  > compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.<br>
+  > hiddenKeys --  An optional array of keys that would be ignored in dumped out content, the default value is [].
 
 
 **entriesFile(obj, compact = true, hiddenKeys = [], file)**<br>
@@ -271,15 +273,20 @@ Parameters
 ## JSDump-Web APIs
 
 **info()**<br>
-  The same with the function in JSDump APIs.
+  Prints the brief information about JSDump to the console.
 
 
 **entriesObj(obj, hiddenKeys = [])**<br>
   The same with the function in JSDump APIs.
 
 
-**entriesPrint(obj, hiddenKeys = [])**<br>
-  Except for no compact parameter, it is the same with the function in JSDump APIs.
+**entriesPrint(obj, hiddenKeys = [], color = false)**<br>
+  Prints the entries information of an object to the console.
+
+  Parameters
+  > obj  --  An object which should be processed.<br>
+  > hiddenKeys --  An optional array of keys that would be ignored in dumped out content, the default value is [].<br>
+  > color -- true to print color text, false to print text without color, he default value is false.
 
 
 **entriesPage(obj, raw = false, hiddenKeys = [])**<br>
@@ -291,8 +298,14 @@ Parameters
   > hiddenKeys -- An optional array of keys that would be ignored in dumped out content, the default value is [].
 
 
-**typeEntriesPrint(obj, propType = 'function', hiddenKeys = [])**<br>
-  Except for no compact parameter, it is the same with the function in JSDump APIs.
+**typeEntriesPrint(obj, propType = 'function', hiddenKeys = [], color = false)**<br>
+  Prints entries in assigned type to the console.
+
+  Parameters
+  > obj -- An object which should be processed.<br>
+  > proptype -- One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection' and 'others', the default value is 'function'.<br>
+  > hiddenKeys  -- An optional array of keys that would be ignored in dumped out content, the default value is [].<br>
+  > color -- true to print color text, false to print text without color, he default value is false.
 
 
 **typeEntriesPage(obj, propType = 'function', raw = false, hiddenKeys = [])**<br>
@@ -418,3 +431,5 @@ JSDump uses a description string for inheritedEntries or prototypeIheritedEntrie
 
 JSDump ignores the information to function parameter as the function definitions do not specify data types for parameters, JavaScript does not perform type checking on the passed arguments, and does not check the number of arguments received in default.
 
+
+## [Back to top](#JSDump)

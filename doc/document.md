@@ -208,66 +208,66 @@ For example, the entries object got from jsdump.entriesPrint( class {} ):
   Returns an object that includes dumped out content from the given object.
 
   Parameters
-  > obj  -- An object which should be processed.<br>
-  > hiddenKeys -- An array of the given properties that should be ignored in the result, the default  value is true.<br>
-  > Return value -- An object of dumped out content.
+  > obj  - An object which should be processed.<br>
+  > hiddenKeys - An array of the given properties that should be ignored in the result, the default  value is true.<br>
+  > Return value - An object of dumped out content.
 
 
 **entriesPrint(obj, compact = true, hiddenKeys = [])**<br>
   Prints the entries information of an object to the console.
 
   Parameters
-  > obj  --  An object which should be processed.<br>
-  > compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.<br>
-  > hiddenKeys --  An optional array of keys that would be ignored in dumped out content, the default value is [].
+  > obj  -  An object which should be processed.<br>
+  > compact - false to print serialized content, true to print the content without serialization, the default value is true.<br>
+  > hiddenKeys -  An optional array of keys that would be ignored in dumped out content, the default value is [].
 
 
 **entriesFile(obj, compact = true, hiddenKeys = [], file)**<br>
   Writes entries object to a txt file.
 
  Parameters
- > obj -- An object which should be processed.<br>
- > compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.<br>
- > hiddenKeys -- An optional array of keys that would be ignored in dumped out content, the default value is [].<br>
- > file -- A file path to dumped-out content, if the file path was ignored the function would write dump-n.txt to the current directory, here n is an integer between 1000 and 9999.
+ > obj - An object which should be processed.<br>
+ > compact - false to print serialized content, true to print the content without serialization, the default value is true.<br>
+ > hiddenKeys - An optional array of keys that would be ignored in dumped out content, the default value is [].<br>
+ > file - A file path to dumped-out content, if the file path was ignored the function would write dump-n.txt to the current directory, here n is an integer between 1000 and 9999.
 
 
 **typeEntriesPrint(obj, propType = 'function', compact = true, hiddenKeys = [])**<br>
   Prints entries in assigned type to the console.
 
   Parameters
-  > obj -- An object which should be processed.<br>
-  > proptype -- One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection' and 'others', the default value is 'function'.<br>
-  > compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.<br>
-  > hiddenKeys  -- An optional array of keys that would be ignored in dumped out content, the default value is [].
+  > obj - An object which should be processed.<br>
+  > proptype - One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection' and 'others', the default value is 'function'.<br>
+  > compact - false to print serialized content, true to print the content without serialization, the default value is true.<br>
+  > hiddenKeys  - An optional array of keys that would be ignored in dumped out content, the default value is [].
 
 
 **typeEntriesFile(obj, propType = 'function', compact = true, hiddenKeys = [], file)**<br>
   Writes entries in assigned type to a txt file.
 
   Parameters
-  > obj --  An object which should be processed.<br>
-  > propType -- One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection' and 'others', the default value is 'function'.<br>
-  > compact -- JSDump serializes the dumped-out content before print if compact is true, the default value is true.<br>
-  > hiddenKeys --  An optional array of keys that would be ignored in dumped out content, the default value is [].<br>
-  > file -- A file path to dumped-out content, if the file path was ignored the function would write dump-n.txt to current directory, here n is an integer between 1000 and 9999.
+  > obj -  An object which should be processed.<br>
+  > propType - One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection' and 'others', the default value is 'function'.<br>
+  > compact - false to print serialized content, true to print the content without serialization, the default value is true.<br>
+  > hiddenKeys -  An optional array of keys that would be ignored in dumped out content, the default value is [].<br>
+  > file - A file path to dumped-out content, if the file path was ignored the function would write dump-n.txt to current directory, here n is an integer between 1000 and 9999.
 
 
 **sourcePrint(obj, prop = 'constructor')**<br>
   Prints the property source to the console.
 
   Parameters
-  > obj -- An object which should be processed.<br>
-  > prop -- An optional string for the property, the default value is 'constructor'.
+  > obj - An object which should be processed.<br>
+  > prop - An optional string for the property, the default value is 'constructor'.
 
 
 **sourceFile(obj, prop = 'constructor', file)**<br>
   Writes the property source to a txt file.
 
   Parameters
-  > obj -- An object which should be processed.<br>
-  > prop -- An optional string for the property, the default value is 'constructor'.<br>
-  > file -- A file path to dumped-out content, if the file path was ignored the function would write dump-n.txt to current directory, here n is an integer between 1000 and 9999.
+  > obj - An object which should be processed.<br>
+  > prop - An optional string for the property, the default value is 'constructor'.<br>
+  > file - A file path to dumped-out content, if the file path was ignored the function would write dump-n.txt to current directory, here n is an integer between 1000 and 9999.
 
 
 ## JSDump-Web APIs
@@ -284,17 +284,17 @@ For example, the entries object got from jsdump.entriesPrint( class {} ):
   Prints the entries information of an object to the console.
 
   Parameters
-  > obj  --  An object which should be processed.<br>
-  > hiddenKeys --  An optional array of keys that would be ignored in dumped out content, the default value is [].<br>
-  > color -- true to print color text, false to print text without color, he default value is false.
+  > obj  -  An object which should be processed.<br>
+  > hiddenKeys -  An optional array of keys that would be ignored in dumped out content, the default value is [].<br>
+  > color - true to print color text, false to print text without color, the default value is false.
 
 
 **entriesPage(obj, raw = false, hiddenKeys = [])**<br>
   Prints the entries information of an object to a new page. This API requires the browser to open a pop-up window.
 
   Parameters
-  > obj -- An object which should be processed.<br>
-  > raw -- An optional boolean for dumped-out content format, the default value is false to output content with style.<br>
+  > obj - An object which should be processed.<br>
+  > raw - An optional boolean for dumped-out content format, the default value is false to output content with style.<br>
   > hiddenKeys -- An optional array of keys that would be ignored in dumped out content, the default value is [].
 
 
@@ -302,20 +302,20 @@ For example, the entries object got from jsdump.entriesPrint( class {} ):
   Prints entries in assigned type to the console.
 
   Parameters
-  > obj -- An object which should be processed.<br>
-  > proptype -- One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection' and 'others', the default value is 'function'.<br>
-  > hiddenKeys  -- An optional array of keys that would be ignored in dumped out content, the default value is [].<br>
-  > color -- true to print color text, false to print text without color, he default value is false.
+  > obj - An object which should be processed.<br>
+  > proptype - One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection' and 'others', the default value is 'function'.<br>
+  > hiddenKeys  - An optional array of keys that would be ignored in dumped out content, the default value is [].<br>
+  > color - true to print color text, false to print text without color, the default value is false.
 
 
 **typeEntriesPage(obj, propType = 'function', raw = false, hiddenKeys = [])**<br>
   Prints the entries information of an object by assigned property type to a new page. This API requires the browser to open a pop-up window.
 
   Parameters
-  > obj -- An object which should be processed.<br>
-  > propType -- One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection', 'others', the default value is 'function'.<br>
-  > raw -- An optional boolean for the format of dumped out content, the default value is false to output content with style.<br>
-  > hiddenKeys -- An optional array of keys that would be ignored in dumped out content, the default value is [].
+  > obj - An object which should be processed.<br>
+  > propType - One of 'primitive', 'function', 'class', 'indexedCollection', 'keyedCollection', 'others', the default value is 'function'.<br>
+  > raw - An optional boolean for the format of dumped out content, the default value is false to output content with style.<br>
+  > hiddenKeys - An optional array of keys that would be ignored in dumped out content, the default value is [].
 
 
 **sourcePrint(obj, prop = 'constructor')**<br>
@@ -326,9 +326,9 @@ For example, the entries object got from jsdump.entriesPrint( class {} ):
   Prints the property source to a new page. This API requires the browser to open a pop-up window.
 
   Parameters
-  > obj -- An object which should be processed.<br>
-  > prop -- An optional string for the property, the default value is constructor.<br>
-  > raw -- An optional boolean for the format of dumped out content.
+  > obj - An object which should be processed.<br>
+  > prop - An optional string for the property, the default value is constructor.<br>
+  > raw - An optional boolean for the format of dumped out content.
 
 
 ## Property attributes

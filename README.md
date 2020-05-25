@@ -6,8 +6,8 @@ JSDump-Web helps people get the information of a JavaScript object at runtime as
 
 JSDump-Web requires browser supporting for ES6 (ECMAScript 2015). 
 |Chrome |Firefox |Edge |Safari |Opera |
-|---------|--------|-------|-------|-------|
-| 51      |54      |14     | 10    | 38    |
+| ---------|--------|-------|-------|-------|
+|  51      |54      |14     | 10    | 38    |
 
 JSDump-Web is a version of JSDump specified for web browsers. To access [JSDump repository](https://github.com/w3plan/jsdump "JSDump") for the details.
 
@@ -23,9 +23,10 @@ Download jsdump.js and jsdump.src.js from [JSDump-Web repository](https://github
 
 Instead of download jsdump.js, you can include it via CDN with https://cdn.jsdelivr.net/gh/w3plan/jsdump-web@master/jsdump.js
 
-## Usage
 
-Adding &lt;script src="https://cdn.jsdelivr.net/gh/w3plan/jsdump-web@master/jsdump.js"></script&gt; or &lt;script src="/js/jsdump-dir/jsdump.js"&gt;&lt;/script&gt; to web pages then doing:
+## Usage examples
+
+Adding &lt;script src="https://cdn.jsdelivr.net/gh/w3plan/jsdump-web@master/jsdump.js"&gt;&lt;/script&gt; or &lt;script src="/js/jsdump-dir/jsdump.js"&gt;&lt;/script&gt; to web pages then doing:
 
 ```javascript
   // prints this message.
@@ -59,6 +60,7 @@ Adding &lt;script src="https://cdn.jsdelivr.net/gh/w3plan/jsdump-web@master/jsdu
 
 ```
 The APIs that write the information to a new page requires the browser to open a pop-up window, you may need to enable pop-up window in the browser setting for these APIs. 
+To see [JSDump-Web APIs](https://github.com/w3plan/jsdump-web/blob/master/doc/document.md#JSDump-Web-APIs "JSDump-Web APIs")
 
 
 ## Tests
